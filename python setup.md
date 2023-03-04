@@ -102,7 +102,7 @@ In `Mac` one can use `terminal` or `iTerm2` and `Windows` user can choose `cmd` 
 python
 ```
 
-Interactive prompt allows to write one line of code at a time. It's for suitable for testing python command rather than writing python scripts.
+Interactive prompt allows to write one line of code at a time. It's suitable for testing python command rather than writing python scripts.
 
 ### 3.2. IDLE - Integrated Development Learning Environment
 
