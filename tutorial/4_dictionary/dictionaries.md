@@ -15,6 +15,21 @@
 
 <!-- /TOC -->
 
+/*
+
+- File: dictionaries.md
+- Project: 4_dictionaries
+- File Created: Friday, 10th March 2023 10:26:31 pm
+- Author: Hanlin Gu (hg_fine_codes@163.com)
+
+- -----
+
+- Last Modified: Friday, 10th March 2023 11:19:33 pm
+- Modified By: Hanlin Gu (hg_fine_codes@163.com>)
+ */
+
+<div style="page-break-after:always"></div>
+
 ## 1. Dictionary definition
 
 Each word that one looks up is the `key`, and the definition of that word is the `value`.
