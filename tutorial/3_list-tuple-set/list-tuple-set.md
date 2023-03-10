@@ -16,7 +16,7 @@
   - [3. Sets](#3-sets)
     - [3.1. Remove duplicates](#31-remove-duplicates)
     - [3.2. Membership test](#32-membership-test)
-    - [3.3. Determine what values are share or don't share with other set](#33-determine-what-values-are-share-or-dont-share-with-other-set)
+    - [3.3. Determine what values are shared or not shared with other set](#33-determine-what-values-are-shared-or-not-shared-with-other-set)
   - [4. Create empty lists, tuples, and Sets](#4-create-empty-lists-tuples-and-sets)
 
 <!-- /TOC -->
@@ -647,7 +647,7 @@ True
 
 Even `list` and `tuple` also has `in` operation, `set` is optimized to search for the existence of a value.
 
-### 3.3. Determine what values are share or don't share with other set
+### 3.3. Determine what values are shared or not shared with other set
 
 Notes that `.intersection()` and `.difference()` of sets return a set.
 
