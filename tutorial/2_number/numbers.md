@@ -1,35 +1,35 @@
 # Numbers in Python
 
-/*
-
-* File: numbers.md
-* Project: 2_numbers
-* File Created: Tuesday, 7th March 2023 10:50:46 am
-* Author: Hanlin Gu (hg_fine_codes@163.com)
-* -----
-* Last Modified: Tuesday, 7th March 2023 6:31:22 pm
-* Modified By: Hanlin Gu (hg_fine_codes@163.com>)
- */
-
 <!-- TOC -->
 
-* [Numbers in Python](#numbers-in-python)
-  * [1. Integers and Floats](#1-integers-and-floats)
-    * [1.1. Arithmetic Operators](#11-arithmetic-operators)
-      * [1.1.1. Check even or odd number by `a % 2`](#111-check-even-or-odd-number-by-a--2)
-    * [1.2. Operators in `operator`](#12-operators-in-operator)
-    * [1.3. Order of operations](#13-order-of-operations)
-    * [1.4. Increment a Variable](#14-increment-a-variable)
-    * [1.5. Build-in functions to work with numbers](#15-build-in-functions-to-work-with-numbers)
-  * [2. Numbers vs. String](#2-numbers-vs-string)
+- [Numbers in Python](#numbers-in-python)
+  - [1. Integers and Floats](#1-integers-and-floats)
+    - [1.1. Arithmetic Operators](#11-arithmetic-operators)
+      - [1.1.1. Check even or odd number by `a % 2`](#111-check-even-or-odd-number-by-a--2)
+    - [1.2. Methods in `operator`](#12-methods-in-operator)
+    - [1.3. Order of operations](#13-order-of-operations)
+    - [1.4. Increment a Variable](#14-increment-a-variable)
+    - [1.5. Build-in functions to work with numbers](#15-build-in-functions-to-work-with-numbers)
+  - [2. Numbers vs. String](#2-numbers-vs-string)
 
 <!-- /TOC -->
+
+/*
+
+- File: numbers.md
+- Project: 2_numbers
+- File Created: Tuesday, 7th March 2023 10:50:46 am
+- Author: Hanlin Gu (hg_fine_codes@163.com)
+- -----
+- Last Modified: Saturday, 11th March 2023 4:16:53 pm
+- Modified By: Hanlin Gu (hg_fine_codes@163.com>)
+ */
 
 <div style="page-break-after:always"></div>
 
 ## 1. Integers and Floats
 
-The build in method `type()` gives one the type of the variable.
+The build in function `type()` gives one the type of the variable.
 
 ```python
 num = 3
@@ -96,7 +96,7 @@ Note that in Python 2, `3 / 2` gives `1` which is the floor of `3 / 2`. But in P
 
 `ceil` of a number `n` means the smallest integer that is bigger than `n`.
 
-For negative numbers, the floor division gives the same result. However, the modulo operator `%` gives different answers based on where the negative number is.
+Based on where the negative number is, the floor division gives the same result. However, the modulo operator `%` gives different answers.
 
 ```python
 print(-5 // 2)
@@ -177,7 +177,7 @@ Output:
 1
 ```
 
-### 1.2. Operators in `operator`
+### 1.2. Methods in `operator`
 
 > Reference:
 >
@@ -209,7 +209,7 @@ Output:
 1
 ```
 
-The comparison operators are
+The comparison methods are
 
 ```python
 import operator as op
@@ -279,7 +279,7 @@ Output:
 
 ### 1.5. Build-in functions to work with numbers
 
-* Absolute value: `abs()`
+- Absolute value: `abs()`
 
 ```python
 print(abs(-2))
@@ -291,7 +291,7 @@ Output:
 2
 ```
 
-* Round the value to the nearest integer: `round()`
+- Round the value to the nearest integer: `round()`
 
 ```python
 print(round(2.49))
@@ -351,7 +351,7 @@ Output:
 3.0
 ```
 
-* Comparison operators
+- Comparison operators
 
 Comparison will return `boolean` value which is `true` or `false`.
 
