@@ -1,0 +1,27 @@
+# Comparison:
+# Equal:            ==
+# Not equal:        !=
+# Greater than:     >
+# Less than:        <
+# Greater or equal: >=
+# Less or equal:    <=
+# Object identity:  is
+
+# Boolean Operations
+# and
+# or
+# not
+
+# False Values:
+    # False
+    # None
+    # Zero of any numeric type
+    # Any empty sequency. For example, '', [], ().
+    # Any empty mapping. For example, {}.
+
+condition = False
+
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluated to False')
