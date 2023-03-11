@@ -4,7 +4,7 @@
 
 - [Lists, Tuples, and Sets](#lists-tuples-and-sets)
   - [1. Lists](#1-lists)
-    - [1.1. Locate the Elements in the List with `index`](#11-locate-the-elements-in-the-list-with-index)
+    - [1.1. Locate the Elements in the List with index](#11-locate-the-elements-in-the-list-with-index)
     - [1.2. List Methods and Functions](#12-list-methods-and-functions)
       - [1.2.1. Add an Element](#121-add-an-element)
       - [1.2.2. Remove Items from the List](#122-remove-items-from-the-list)
@@ -30,7 +30,7 @@
 
 - -----
 
-- Last Modified: Thursday, 9th March 2023 5:55:24 pm
+- Last Modified: Saturday, 11th March 2023 4:31:11 pm
 - Modified By: Hanlin Gu (hg_fine_codes@163.com>)
  */
 
@@ -56,7 +56,7 @@ Output:
 <class 'list'>
 ```
 
-### 1.1. Locate the Elements in the List with `index`
+### 1.1. Locate the Elements in the List with index
 
 The index rule is the same as in string, such that `var_name[idx]` gives you the element or part of the list with index as `idx` in the variable `var_name`.
 
@@ -132,7 +132,7 @@ Output:
 
 - Add the element to specific location in the list: `var_name.insert()`
 
-`insert()` takes two arguments, the first is the location, and the second is the element, i.e. `var_name.insert(loc,element)`.
+`.insert()` takes two arguments, the first is the location, and the second is the element, i.e. `var_name.insert(loc,element)`.
 
 ```python
 courses = ['History', 'Math', 'Physics', 'CompSci']
@@ -148,7 +148,7 @@ Output:
 
 - Multiple values to add to the list: `var_name.extend()`
 
-If one still use `insert()` method,
+If one still use `.insert()` method,
 
 ```python
 courses = ['History', 'Math', 'Physics', 'CompSci']
@@ -163,9 +163,9 @@ Output:
 [['Art', 'Education'], 'History', 'Math', 'Physics', 'CompSci']
 ```
 
-the new values are added directly as a list in the beginning rather than adding the individual value to the list.
+the new values are added directly as a list in the beginning rather than adding the individual values to the list.
 
-And `append()` also does the similar operation by putting the whole list at the end.
+And `.append()` also does the similar operation by putting the whole list at the end.
 
 ```python
 courses = ['History', 'Math', 'Physics', 'CompSci']
@@ -211,7 +211,7 @@ Output:
 ['History', 'Physics', 'CompSci']
 ```
 
-- `pop()` method
+- `.pop()` method
 
 `var_name.pop()` by default will remove the last element of the `var_name`, and it saved the removed value.
 
@@ -251,7 +251,7 @@ Output:
 
 - Sorting the list: `var_name.sort()`
 
-Sort the list in alphabetic order,
+Sort the list in alphabetic order by `var_name.sort()`.
 
 If the list contains numbers, it will sort those in ascending order.
 
@@ -406,7 +406,7 @@ CompSci
 
 - Get the index and value simultaneously: `enumerate()` function
 
-The `enumerate()` function returns two values which are the index that we are on and the value.
+The `enumerate()` function returns two values which are the index that we are on and its value.
 
 ```python
 courses = ['History', 'Math', 'Physics', 'CompSci']
@@ -460,7 +460,7 @@ Output:
 
 #### 1.2.6. Turn List into Strings
 
-- Turn a list into strings separated by certain values using string method `join()` and passes the list as argument.
+- Turn a list into strings separated by certain values using string method `.join()` and passes the list as argument.
 
 To turn the list of `courses` into a string of comma separated values.
 
@@ -477,7 +477,7 @@ Output:
 History, Math, Physics, CompSci
 ```
 
-- Turn a string into a list
+- Turn a string into a list by `.split()` method
 
 ```python
 courses = ['History', 'Math', 'Physics', 'CompSci']
@@ -529,7 +529,7 @@ Output:
 ['Art', 'Math', 'Physics', 'CompSci']
 ```
 
-If you want a list of values that you know are going to change, then we can use a `tuple`. Tuple uses parentheses `()` instead of square brackets `[]` in `list`.
+If you want a list of values that you know not to change, then we can use a `tuple`. Tuple uses parentheses `()` instead of square brackets `[]` in `list`.
 
 ```python
 # Immutable
@@ -589,7 +589,7 @@ Output:
 
 ## 3. Sets
 
-Sets are values that are unordered and with no duplicates. Sets use curly braces `{}`.
+Sets are values that are `unordered` and with `no duplicates`. Sets use curly braces `{}`.
 
 <!-- curly braces 大括号 -->
 
@@ -611,7 +611,7 @@ However, if one run the above code again, one gets a different result.
 {'History', 'Physics', 'Math', 'CompSci'}
 ```
 
-Unlike `list` and `tuple`, `set` doesn't care about orders. The main uses for a set is either to test a value is part of the set or to remove duplicated values because sets throw away duplicates.
+Unlike `list` and `tuple`, `set` doesn't care about orders. The main uses for a `set` is either to test a value is `part of the set` or to `remove duplicated values` because sets throw away duplicates.
 
 ### 3.1. Remove duplicates
 
