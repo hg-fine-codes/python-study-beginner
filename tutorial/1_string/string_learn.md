@@ -1,25 +1,28 @@
 # How to Write String in Python
 
-/*
-
-* File: string_learn.md
-* Project: tutorial
-* File Created: Friday, 3rd March 2023 12:18:41 pm
-* Author: Hanlin Gu (hg_fine_codes@163.com)
-* -----
-* Last Modified: Friday, 3rd March 2023 4:34:15 pm
-* Modified By: Hanlin Gu (hg_fine_codes@163.com>)
- */
-
 <!-- TOC -->
 
-* [1. string](#1-string)
-  * [1.1. What is String in Python](#11-what-is-string-in-python)
-  * [1.2. Length of String](#12-length-of-string)
-  * [1.3. Slicing of String](#13-slicing-of-string)
-  * [1.4. String Methods](#14-string-methods)
+- [How to Write String in Python](#how-to-write-string-in-python)
+  - [1. string](#1-string)
+    - [1.1. What is String in Python](#11-what-is-string-in-python)
+    - [1.2. Length of String](#12-length-of-string)
+    - [1.3. Slicing of String](#13-slicing-of-string)
+    - [1.4. String Methods](#14-string-methods)
 
 <!-- /TOC -->
+
+/*
+
+- File: string_learn.md
+- Project: 1_string
+- File Created: Friday, 3rd March 2023 12:18:41 pm
+- Author: Hanlin Gu (hg_fine_codes@163.com)
+
+- -----
+
+- Last Modified: Saturday, 11th March 2023 3:48:30 pm
+- Modified By: Hanlin Gu (hg_fine_codes@163.com>)
+ */
 
 <div style="page-break-after:always"></div>
 
@@ -39,7 +42,7 @@ Output:
 Hello World
 ```
 
-To make `print()` shorter, one can define a variable like `message` to store the string information. And the print that variable instead `print(message)`.
+To make `print()` shorter, one can define a variable like `message` to store the string information. And then print that variable instead `print(message)`.
 
 ```python
 message = """Tom says it's "Bobby's World"!"""
@@ -75,9 +78,9 @@ In python, the number counting `starts from 0`. One specific number `[n]` means 
 
 `[-n]` means counting from the end, for example `[-1]` is the last letter.
 
-`[start:stop]` means the string that starts from `start` to the `stop`, but include the `start`  and exclude the `stop`.
+`[start:stop]` means the string that starts from `start` to the `stop`, but include the `[start]`  and exclude the `[stop]`.
 
-`[:stop]` give the letters from the beginning to the `stop` which is equivalent to `[0:stop]`.
+`[:stop]` gives the letters from the beginning to the `stop` which is equivalent to `[0:stop]`.
 
 Similarly, `[start:]` means all the letters from the `start` to the last letter of the string.
 
@@ -104,17 +107,17 @@ World
 
 The use of different methods, return a new string with the methods applied.
 
-* all lower case: `var_name.lower()`
+- all lower case: `var_name.lower()`
 
-* all upper case: `var_name.upper()`
+- all upper case: `var_name.upper()`
 
-* count certain number of characters: `var_name.count()`
+- count certain number of characters: `var_name.count()`
 
 `count()` takes a string as an argument.
 
-* find certain index: `var_name.find()`
+- find certain index: `var_name.find()`
 
-`found()` also takes a string argument, and returns where that string `starts`. If a string is not find, then it will return `-1`.
+`found()` also takes a string argument, and returns where that string `first appears`. If a string is not find, then it will return `-1`.
 
 ```python
 message = 'Hello World'
@@ -137,9 +140,9 @@ HELLO WORLD
 -1
 ```
 
-* replace some characters by other characters: `var_name.replace(var1,var2)`
+- replace some characters by other characters: `var_name.replace(var1,var2)`
 
-`replace(var1,var2)` takes two variables, the first variable `var1` is the string that one wants to be replaced and the second variable `var2` is the string to replace the original string.
+`.replace(var1,var2)` takes two variables, the first variable `var1` is the string that one wants to be replaced and the second variable `var2` is the string to replace the original string.
 
 ```python
 message = 'Hello World'
@@ -169,7 +172,7 @@ Output:
 Hello Universe
 ```
 
-* Add multiple strings and concatenate them together
+- Add multiple strings and concatenate them together
 
 (1) Use `+` to connect two strings
 
@@ -205,7 +208,7 @@ Output:
 Hello, Michael
 ```
 
-(2) formatted string `format()`
+(2) formatted string `.format()` method
 
 But, if the sentience is long, it's hard to keep track of the variables to write in this way.
 
@@ -224,7 +227,7 @@ Output:
 Hello, Michael. Welcome!
 ```
 
-To write the sentence above, one would use method `format()` by leaving the placeholder `{}` in the string to take the places of the variables and add the variable names in the brackets of `format()` in orders.
+To write the sentence above, one would use method `.format()` by leaving the placeholder `{}` in the string to take the places of the variables and add the variable names in the brackets of `format()` in orders.
 
 ```python
 greeting = 'Hello'
@@ -245,7 +248,7 @@ This is easier to read.
 
 (3) f strings: for Python 3.6 and above
 
-This f string method is very convenient to use since it can also combine other methods. In the `format()` method, this also works.
+This f string method is very convenient to use since it can also combine other methods. In the `.format()` method, this also works.
 
 ```python
 greeting = 'Hello'
@@ -265,7 +268,7 @@ Hello, Michael. Welcome!
 Hello, MICHAEL. Welcome!
 ```
 
-* all methods available for the variable: `dir(vir_name)`
+- all methods available for the variable: `dir(vir_name)`
 
 ```python
 greeting = 'Hello'
@@ -280,7 +283,7 @@ Output:
 ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 ```
 
-* How does the String Methods Work `help(obj_type)`
+- How does the String Methods Work `help(obj_type)`
 
 ```python
 print(help(str))
