@@ -24,7 +24,7 @@
 
 - -----
 
-- Last Modified: Friday, 10th March 2023 11:19:33 pm
+- Last Modified: Saturday, 11th March 2023 4:38:07 pm
 - Modified By: Hanlin Gu (hg_fine_codes@163.com>)
  */
 
@@ -134,7 +134,7 @@ Output:
 
 ### 2.1. Update Value
 
-To update multiple values at a time,
+To update `multiple values` at a time,
 `.update()` method will do the work by `var_dict.update({key1:value1, key2:value2})`.
 
 ```python
