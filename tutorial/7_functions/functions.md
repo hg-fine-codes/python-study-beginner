@@ -49,7 +49,6 @@ def hello_func():
     pass
 
 
-# print(hello_func)
 print(hello_func())
 ```
 
@@ -73,7 +72,7 @@ Output:
 Hello Function!
 ```
 
-Function allow one to reuse code without repeating oneself. This is called keeping your code `DRY`.
+Function allows one to reuse code without repeating oneself. This is called keeping your code `DRY`.
 
 ```python
 def hello_func():
@@ -109,7 +108,7 @@ Output:
 Hello Function.
 ```
 
-For the first time to look at a function, focus on the `input` and what's `returned` instead of understanding every details of every function does.
+For the first time to look at a function, focus on the `input` and what's `returned` instead of understanding every details of what each function does.
 
 As we know the function `hello_func()` returns a string. Then all the methods, functions that work for string can be applied to this function as well.
 
@@ -161,11 +160,11 @@ Output:
 Hi Function.
 ```
 
-Notice that this `greeting` variable doesn't affect any variable outside the function. It's only local to the function, so that one doesn't need to worry about anything that one doesn't want to affect.
+**Notice that** this `greeting` variable doesn't affect any variable outside the function. It's only `local` to the function, so that one doesn't need to worry about anything that one doesn't want to affect.
 
-Right now the `greeting` is a required argument, because it doesn't have a default value.
+Right now the `greeting` is a required `positional argument`, because it doesn't have a default value.
 
-By setting default value for an argument, if the function doesn't have that argument given then it will use the default value instead.
+By setting default value for an argument is called a `keyword argument`, if the function doesn't have that argument given then it will use the default value instead.
 
 ```python
 def hello_func(greeting, name='You'):
@@ -187,7 +186,7 @@ Hi, Corey!
 Hi, Corey!
 ```
 
-**Note** your require `positional arguments` have to come before your `keyword arguments`. If you try to create a function with those out of order, then it will give you an error.
+**Note**, the required `positional arguments` have to come before your `keyword arguments`. If you try to create a function with those out of order, then it will give you an error.
 
 `*args` and `**kwargs` allow us to accept an arbitrary number of positional or keyword arguments. The name does not have to be `args` and `kwargs` but it's good to stay with convention so that it's more readable for others.
 
@@ -207,7 +206,7 @@ Output:
 {'name': 'John', 'age': 22}
 ```
 
-`args` prints a tuple of all the positional arguments, and `kwargs` is a dictionary of all the keyword values.
+`args` is a `tuple` of all the `positional arguments`, and `kwargs` is a `dictionary` of all the `keyword values`.
 
 Some times one might see function call with arguments using `*` or `**`. When it's used in that context, it will actually `unpack` a sequency or dictionary and pass those values into the function individually.
 
@@ -251,7 +250,7 @@ Output:
 
 ## 3. Snippets - number of days per month
 
-The three quotes `"""Documents"""` in the `def` is called `doc string`, and it helps document what a `function` or a `class` supposes to do.
+The three quotes `"""Documents"""` in the function is called `doc string`, and it helps document what a `function` or a `class` supposes to do.
 
 ```python
 # Number of days per month. First value placeholder for indexing purpose.
